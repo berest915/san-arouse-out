@@ -1,30 +1,31 @@
-import React from 'react'
-import {
-  Nav,
-	Logo,
-	LeftFlex,
-  MidFlex,
-  RightFlex,
-} from './NavbarCss';
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+import { Nav, Logo, LeftFlex, MidFlex, RightFlex } from './NavbarCss';
 
 const Navbar = () => {
-  return (
-    <>
-      	<Nav>
-					<LeftFlex>
-						<Logo className='fab fa-accusoft'></Logo>
-						SAn @Arouse
-					</LeftFlex>
-          <MidFlex >
-            <div>Resume</div>
-            <div>Contact</div>
-          </MidFlex>
-					<RightFlex>
-          <Logo className="fas fa-language"></Logo><span>LANG</span>
-					</RightFlex>
-				</Nav>
-    </>
-  )
-}
+	return (
+		<>
+			<Nav>
+				<LeftFlex>
+					<Logo className='fab fa-accusoft'></Logo>
+					SAn @Arouse
+				</LeftFlex>
+				<MidFlex>
+					<Link to='/'>
+						<div>Resume</div>
+					</Link>
+					<Link to='/'>
+						<div>Contact</div>
+					</Link>
+				</MidFlex>
+				<RightFlex>
+					<Logo className='fas fa-language'></Logo>
+					<span>LANG</span>
+				</RightFlex>
+			</Nav>
+		</>
+	);
+};
 
-export default Navbar
+export default Navbar;

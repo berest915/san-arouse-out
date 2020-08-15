@@ -23,8 +23,8 @@ export const Nav = styled.nav`
 	background-color: ${NAV_BG};
 	z-index: 5;
 	padding: 2vh 2%;
-  width: 100%;
-  max-height: 10vh;
+	width: 100%;
+	max-height: 10vh;
 	display: flex;
 	position: fixed;
 	& > * {
@@ -34,28 +34,36 @@ export const Nav = styled.nav`
 	font-size: 1.2rem;
 `;
 export const LeftFlex = styled.div`
-  display: inline-flex;
-  flex: 1;
-  align-items: center;
-  font-size: 1.7rem;
-  padding-right: 5rem;
+	display: inline-flex;
+	flex: 1;
+	align-items: center;
+	font-size: 1.7rem;
+	padding-right: 5rem;
 `;
 export const Logo = styled.i`
-  font-size: 2rem;
-  padding-right: 1rem;
-`
+	font-size: 2rem;
+	padding-right: 1rem;
+`;
 export const MidFlex = styled.div`
-display: flex;
-  flex: 2;
-  justify-content: space-evenly;
+	display: flex;
+	flex: 2;
+	justify-content: space-evenly;
 	align-items: center;
+	& > * {
+    color: ${NAV_FONT_COLOR};
+    &:hover{
+      color: white;
+      text-decoration: none;
+      
+    }
+  }
 `;
 export const RightFlex = styled.div`
-display: inline-flex;
- 
-  justify-content: space-evenly;
-  align-items: center;
-  padding-left: 5rem;
+	display: inline-flex;
+
+	justify-content: space-evenly;
+	align-items: center;
+	padding-left: 5rem;
 `;
 //! main-container
 export const MainCardContainer = styled.div`
