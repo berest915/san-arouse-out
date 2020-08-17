@@ -15,8 +15,9 @@ function App() {
     <BrowserRouter>
     <Navbar />
     <div className="App">
+      {/* nav + cover-page */}
       <FirstMainCardContainer />
-      <SecondMainCardContainer />
+      {/* <SecondMainCardContainer /> */}
       <ThirdMainCardContainer />
       <FourthMainCardContainer />
       <FifthMainCardContainer />
