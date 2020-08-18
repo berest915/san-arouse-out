@@ -8,8 +8,8 @@ const { NAV_BG, NAV_FONT_COLOR } = NAV_COLOR;
 export const Nav = styled.nav`
 	/* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 	font-family: Roboto;
-	color: ${NAV_FONT_COLOR};
 	background-color: ${NAV_BG};
+	color: ${NAV_FONT_COLOR};
 	z-index: 5;
 	padding: 2vh 2%;
 	width: 100%;
