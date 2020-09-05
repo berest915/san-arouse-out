@@ -17,8 +17,7 @@ const cssCoverImage = css`
 //! styled
 //! main-container
 export const MainCardContainer = styled.div`
-	height: 100vh;
-	max-height: 100vh;
+	min-height: 100vh;
 	background-color: ${props => (props.darker ? BG_DARKER : BG_LIGHTER)};
 	padding: ${props => (props.pad === 'minor' ? PAD_MINOR : PAD_MAJOR)};
 	${props => props.enCoverImage && cssCoverImage}

@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 //* extract css constants
 import { NAV_COLOR } from '../../const/css-constant';

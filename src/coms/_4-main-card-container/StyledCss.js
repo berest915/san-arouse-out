@@ -1,14 +1,9 @@
-import styled, { css } from 'styled-components';
-import { MainCardContainer } from '../commonStylesCss';
+import styled from 'styled-components';
 
 //! { css }
 
 //! styled
-export const ReMainCardContainer = styled(MainCardContainer)`
-height: 100%;
-  max-height: 150vh;
-  
-`
+
 
 export const Wrapper = styled.div`
   padding: 100px 0;

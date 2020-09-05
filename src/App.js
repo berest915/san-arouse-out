@@ -5,10 +5,10 @@ import './App.css';
 //! coms
 import Navbar from './layout/navbar/Navbar';
 import FirstMainCardContainer from './coms/_1-main-card-container/FirstMainCardContainer'
-import SecondMainCardContainer from './coms/_2-main-card-container/SecondMainCardContainer'
+// import SecondMainCardContainer from './coms/_2-main-card-container/SecondMainCardContainer'
 import ThirdMainCardContainer from './coms/_3-main-card-container/ThirdMainCardContainer'
 import FourthMainCardContainer from './coms/_4-main-card-container/FourthMainCardContainer'
-import FifthMainCardContainer from './coms/_5-main-card-container/FifthMainCardContainer'
+// import FifthMainCardContainer from './coms/_5-main-card-container/FifthMainCardContainer'
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
       {/* <SecondMainCardContainer /> */}
       <ThirdMainCardContainer />
       <FourthMainCardContainer />
-      <FifthMainCardContainer />
+      {/* <FifthMainCardContainer /> */}
       <Switch>
         <Route></Route>
       </Switch>

@@ -1,8 +1,8 @@
-// export const BG_DARKER = 'rgba(211,211,211, 0.6)'
-// export const BG_LIGHTER = 'rgba(211,211,211, 0.3)'
 export const CARD_BG = {
-  BG_DARKER: 'rgba(211,211,211, 0.6)',
+  BG_DARKER: 'rgba(211,211,211, 0.8)',
   BG_LIGHTER: 'rgba(211,211,211, 0.3)',
+  CARD_BG_ONE: '#F0F0F6',
+  CARD_LINK_COLOR: '#6888ff',
 }
 export const NAV_COLOR = {
   NAV_BG: 'rgba(47,79,79, 0.85)',
@@ -18,3 +18,4 @@ export const FOOTER_COLOR = {
   FOOTER_PRIMARY_FONT_COLOR: 'rgba(255,255,255, 0.8)',
   FOOTER_SECONDARY_FONT_COLOR: 'orange',
 }
+

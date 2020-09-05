@@ -38,14 +38,14 @@ const FifthMainCardContainer = () => {
 							<strong className='position'>{text}</strong>
 						</div>
 						<div className='i-container'>
-							<a href='#'>
-								<i class='fab fa-github-square'></i>
+							<a href='google.com'>
+								<i className='fab fa-github-square'></i>
 							</a>
-							<a href='#'>
-								<i class='fab fa-facebook-square'></i>
+							<a href='google.com'>
+								<i className='fab fa-facebook-square'></i>
 							</a>
-							<a href='#'>
-								<i class='fab fa-linkedin'></i>
+							<a href='google.com'>
+								<i className='fab fa-linkedin'></i>
 							</a>
 						</div>
 					</RightContainer>

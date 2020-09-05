@@ -1,7 +1,8 @@
 import React from 'react';
+import { MainCardContainer } from '../commonStylesCss';
 
 //! styled-components
-import {ReMainCardContainer, Wrapper, TimelineContainer, H3 } from './StyledCss'
+import { Wrapper, TimelineContainer, H3 } from './StyledCss'
 
 //! lib component
 import { Timeline, TimelineEvent } from 'react-event-timeline'
@@ -10,7 +11,7 @@ import { Timeline, TimelineEvent } from 'react-event-timeline'
 const FourthMainCardContainer = () => {
 	return (
 		<>
-			<ReMainCardContainer pad='major' darker={false}>
+			<MainCardContainer pad='major' darker={false}>
 			<>
 			<Wrapper>
 				<TimelineContainer borderRight={true}>
@@ -86,7 +87,7 @@ const FourthMainCardContainer = () => {
 				</TimelineContainer>
 			</Wrapper>
 		</>
-			</ReMainCardContainer>
+			</MainCardContainer>
 		</>
 	);
 };
