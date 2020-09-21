@@ -1,40 +1,35 @@
 import styled, { css } from 'styled-components';
 
-import { CARD_BG } from '../../const/css-constant';
+import { CARD_BG } from '../../../const/css-constant';
 const { CARD_LINK_COLOR } = CARD_BG;
 
 //! css
-const rightBoxShadow = css`
-	-webkit-box-shadow: 7px 4px 36px -8px rgba(112, 100, 112, 0.55);
-	-moz-box-shadow: 7px 4px 36px -8px rgba(112, 100, 112, 0.55);
-	box-shadow: 7px 4px 36px -8px rgba(112, 100, 112, 0.55);
-`;
 const leftBoxShadow = css`
-	-webkit-box-shadow: -7px -4px 36px -8px rgba(112, 100, 112, 0.55);
-	-moz-box-shadow: -7px -4px 36px -8px rgba(112, 100, 112, 0.55);
-	box-shadow: -7px -4px 36px -8px rgba(112, 100, 112, 0.55);
+	-webkit-box-shadow: -12px -4px 36px -8px rgba(112, 100, 112, 0.55);
+	-moz-box-shadow: -12px -4px 36px -8px rgba(112, 100, 112, 0.55);
+	box-shadow: -12px -4px 36px -8px rgba(112, 100, 112, 0.55);
+`;
+const rightBoxShadow = css`
+	-webkit-box-shadow: 12px 4px 36px -8px rgba(112, 100, 112, 0.55);
+	-moz-box-shadow: 12px 4px 36px -8px rgba(112, 100, 112, 0.55);
+	box-shadow: 12px 4px 36px -8px rgba(112, 100, 112, 0.55);
 `;
 
 //! styled
-export const Card = styled.div`
+export const Wrapper = styled.div`
 	height: 50vh;
 	width: 100%;
 	padding: 2rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	${props => props.rowReverse && 'flex-direction: row-reverse'};
+	${props => props.isRowReverse && 'flex-direction: row-reverse'};
 	.w-46 {
 		width: 46%;
 	}
-	.right {
-		${rightBoxShadow}
-	}
-	.left {
-		${leftBoxShadow}
-	}
 `;
 export const ImageDiv = styled.div`
+	${props => (props.isRowReverse === false ? leftBoxShadow : rightBoxShadow)}
 	img {
 		width: 100%;
 		border: 1px solid black;
